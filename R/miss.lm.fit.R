@@ -11,7 +11,7 @@
 #' \item{s.err}{Standard error for estimated parameters.}
 #' \item{mu.X}{Estimated \eqn{\mu}{\mu}.}
 #' \item{Sig.X}{Estimated \eqn{\Sigma}{\Sigma}.}
-#' @import norm MASS mice
+#' @import norm MASS
 #' @importFrom methods is
 #' @examples
 #' ## For examples see example(miss.lm)
@@ -44,6 +44,7 @@ miss.lm.fit <- function (x, y,
   if (is(x, "data.frame")){
     x <- as.matrix(x)
   }
+  
   if (sum(sapply(x, is.numeric)) < ncol(x) ||
       sum(sapply(y, is.numeric)) < length(y)) {
     stop("Error: parameters 'x' and 'y' should be numeric.")

@@ -14,7 +14,7 @@
 #' \item{Sig.X}{Estimated \eqn{\Sigma}{\Sigma}.}
 #' \item{call}{the matched call.}
 #' \item{formula}{the formula supplied.}
-#' @import mvtnorm stats mice
+#' @import mvtnorm stats
 #' @examples
 #' # Generate complete data
 #' set.seed(1)

@@ -7,7 +7,7 @@
 #' @param ... Further arguments passed to or from other methods.
 #' @return
 #' \item{pr.y}{The prediction result for linear regression.}
-#' @import norm MASS mice
+#' @import norm MASS
 #' @importFrom methods is
 #' @examples
 #'
