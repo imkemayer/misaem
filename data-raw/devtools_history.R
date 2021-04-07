@@ -1,6 +1,5 @@
 devtools::use_data_raw()
 
-devtools::use_package("mice")
 devtools::use_package("mvtnorm")
 
 #vignette
@@ -20,10 +19,10 @@ devtools::build()
 devtools::check_win_devel()
 
 #check on R-hub
-rhub::validate_email(email = 'wei.jiang@polytechnique.edu', token ='d382032488854e03b3b6ff567eaa2d9a')
+rhub::validate_email(email = 'mayer.imke@gmail.com', token ='0099521ba359444288343bb5c70e8ef7')
 devtools::check_rhub()
 
-#R CMD check --as-cran misaem_1.0.0.tar.gz
+#R CMD check --as-cran misaem_1.0.1.tar.gz
 
 #submit on CRAN
 devtools::submit_cran()

@@ -1,3 +1,17 @@
+# misaem 1.0.1
+
+A minor release mainly fixing bugs and typos and also serving for authorized maintainer takeover:
+
+* Fix a bug in `miss.lm.fit`, the definition of p, the number of covariates, is now moved to the beginning of the function. A
+
+* Fix another bug in `miss.lm.fit`, replacing `is(x, "data.frame")` with `!is(x, "matrix")` to make the parameter consistency check also pass for a single observation in x.
+
+* Fix some typos in the descriptions of the functions for linear regression model.
+
+* Move `mice` package from imported to suggested packages.
+
+* Takeover of maintenance from Wei Jiang by Julie Josse, who was co-author of the package from the beginning.
+
 # misaem 1.0.0
 
 A major release mainly update the follows:

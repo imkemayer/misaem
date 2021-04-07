@@ -1,9 +1,12 @@
 Package: misaem
-Title: Linear Regression and Logistic Regression with Missing Covariates
-Version: 1.0.0
-Date: 2020-07-04
-Authors@R: c( person("Wei", "Jiang", email = "wei.jiang@polytechnique.edu", role = c("aut", "cre")),
-              person("Pavlo","Mozharovskyi", role = "ctb", email = "pavlo.mozharovskyi@telecom-paristech.fr"))
+Title: Linear Regression and Logistic Regression with Missing
+        Covariates
+Version: 1.0.1
+Date: 2021-04-07
+Authors@R: c( person("Wei", "Jiang", role = "aut", email = "wei.jiang@polytechnique.edu"),
+              person("Pavlo","Mozharovskyi", role = "ctb", email = "pavlo.mozharovskyi@telecom-paristech.fr"),
+              person("Julie","Josse", role = c("aut","cre"), email = "julie.josserennes@gmail.com"),
+              person("Imke", "Mayer", role = "ctb", email = "mayer.imke@gmail.com"))
 Description: Estimate parameters of linear regression and logistic regression with missing covariates with missing data, perform model selection and prediction, using EM-type algorithms.
 Depends: R (>= 3.4.0)
 Encoding: UTF-8
@@ -14,3 +17,12 @@ Suggests: knitr, rmarkdown, mice
 LazyData: false
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2020-07-05 11:16:11 UTC; wjiang
+Author: Wei Jiang [aut],
+  Pavlo Mozharovskyi [ctb],
+  Julie Josse [aut, cre],
+  Imke Mayer [ctb]
+Maintainer: Julie Josse <julie.josserennes@gmail.com>
+Repository: CRAN
+Date/Publication: 2020-07-05 11:50:03 UTC

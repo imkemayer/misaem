@@ -6,13 +6,14 @@
 
 1. Parameters estimation.
 2. Estimation of standard deviation for estimated parameters.
-3. Model selection procedure based on BIC. 
+3. Model selection procedure based on BIC.
 
-### Installation of package 
-Now you can install the package **misaem** from CRAN. 
+### Installation of package
+Now you can install the package **misaem** from CRAN.
 ```{r}
 install.packages("misaem")
  ```
+ 
 ### Using the misaem package
 Basically,
 
@@ -25,7 +26,7 @@ library(misaem)
 vignette('misaem')
  ```
 
-## Reference 
+## Reference
 Logistic Regression with Missing Covariates
 -- Parameter Estimation, Model Selection
 and Prediction (2020, Jiang W., Josse J., Lavielle M., TraumaBase Group), [Computational Statistics & Data Analysis](https://doi.org/10.1016/j.csda.2019.106907).
