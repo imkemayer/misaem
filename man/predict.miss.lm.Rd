@@ -2,7 +2,7 @@
 % Please edit documentation in R/predict.miss.lm.R
 \name{predict.miss.lm}
 \alias{predict.miss.lm}
-\title{Prediction on test with missing values for the logistic regression model.}
+\title{Prediction on test with missing values for the linear regression model.}
 \usage{
 \method{predict}{miss.lm}(object, newdata = NULL, seed = NA, ...)
 }
@@ -19,7 +19,7 @@
 \item{pr.y}{The prediction result for linear regression.}
 }
 \description{
-Prediction on test with missing values for the logistic regression model.
+Prediction on test with missing values for the linear regression model.
 }
 \examples{
 

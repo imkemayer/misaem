@@ -43,7 +43,7 @@
 #' @export
 
 miss.lm <- function (formula,  data,
-                      control = list(...), ...
+                     control = list(...), ...
 )
 {
   call <- match.call()

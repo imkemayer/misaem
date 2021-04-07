@@ -4,7 +4,7 @@ author: "Wei Jiang"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{misaem tutorial}
+  %\VignetteIndexEntry{Linear regression and logistic regression with missing covariates}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,6 +14,7 @@ vignette: >
 `misaem` is a package to perform linear regression and logistic regression with missing data, under MCAR (Missing completely at random) and MAR (Missing at random) mechanisms. The covariates are assumed to be continuous variables. The methodology implemented is based on maximization of the observed likelihood using EM-types of algorithms. The package includes:
 
 1. Parameters estimation:
+
 * for linear regression, we consider a joint Gaussian distribution for covariates and response, then the `norm` package allows to estimate the mean vector and a variance covariance matrix with the EM algorithm and SWEEP operator. Finally we have reshaped them to obtain the regression coefficient.
 * for logistic regression, with a stochastic approximation version of EM algorithm (SAEM) based on Metropolis-Hasting sampling.
 2. Estimation of standard deviation for estimated parameters:
@@ -82,12 +83,14 @@ The main function in our package to fit linear regression with missingness is `m
 df.obs = data.frame(y, X.obs)
 miss.list = miss.lm(y~., data = df.obs)
 ```
+
 Then it returns an object of self-defined class `miss.lm`, which consists of the estimation of parameters, their standard error and observed log-likelihood. We can print or summarize the obtained results as follows:
 ```{r}
 print(miss.list)
 print(summary(miss.list)) 
 summary(miss.list)$coef 
 ```
+
 Self-defined parameters can be also taken such as the maximum number of iterations (`maxruns`), the convergence tolerance (`tol_em`) and the logical indicating if the iterations should be reported (`print_iter`). 
 ```{r}
 # Estimate regression using self-defined parameters
