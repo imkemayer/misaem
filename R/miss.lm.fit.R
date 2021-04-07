@@ -27,7 +27,8 @@ miss.lm.fit <- function (x, y,
 
   xnames <- dimnames(x)[[2L]]
   x = as.matrix(x[,-1])
-
+  p <- ncol(x)
+  
   #delete rows completely missing
   if(any(apply(is.na(x),1,sum)==p)){
     i_allNA=which(apply(is.na(x),1,sum)==p)
@@ -41,7 +42,7 @@ miss.lm.fit <- function (x, y,
   }
 
   # Check parameter consistency
-  if (is(x, "data.frame")){
+  if (!is(x, "matrix")){
     x <- as.matrix(x)
   }
   
