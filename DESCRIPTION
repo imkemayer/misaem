@@ -18,11 +18,9 @@ LazyData: false
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2020-07-05 11:16:11 UTC; wjiang
 Author: Wei Jiang [aut],
   Pavlo Mozharovskyi [ctb],
   Julie Josse [aut, cre],
   Imke Mayer [ctb]
 Maintainer: Julie Josse <julie.josserennes@gmail.com>
 Repository: CRAN
-Date/Publication: 2020-07-05 11:50:03 UTC
