@@ -13,6 +13,9 @@
 
 \item{...}{further arguments passed to or from other methods.}
 }
+\value{
+no return value, called for summary print
+}
 \description{
 Print results for class \code{summary.miss.glm}.
 }
