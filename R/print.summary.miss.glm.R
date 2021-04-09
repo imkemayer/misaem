@@ -4,6 +4,7 @@
 #' @param x an object of class "\code{summary.miss.glm}", usually, a result of a call to \code{\link{summary.miss.glm}}.
 #' @param digits minimal number of significant digits.
 #' @param ... further arguments passed to or from other methods.
+#' @return No return value, called for summary print.
 #' @examples
 #' ## For examples see example(miss.glm)
 #' @export
@@ -19,7 +20,7 @@ print.summary.miss.glm <-
       print.default(format(x$coefficients, digits = digits),
                     print.gap = 2, quote = FALSE)
     } else cat("No coefficients\n\n")
-    
+
     cat("Log-likelihood: ", format(x$loglikelihood, digits = max(4L, digits + 1L)),
         "\n", sep = "")
     cat("\n")

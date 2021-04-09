@@ -13,6 +13,9 @@
 
 \item{...}{further arguments passed to or from other methods.}
 }
+\value{
+no return value, called for coefficient and standard error estimates print
+}
 \description{
 Print results for class \code{miss.lm}.
 }

@@ -4,6 +4,7 @@
 #' @param x an object of class "\code{miss.glm}", usually, a result of a call to \code{\link{miss.glm}}.
 #' @param digits minimal number of significant digits.
 #' @param ... further arguments passed to or from other methods.
+#' @return No return value, called for coefficient and standard error estimates print.
 #' @examples
 #' ## For examples see example(miss.glm)
 #' @export

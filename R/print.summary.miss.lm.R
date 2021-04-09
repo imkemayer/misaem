@@ -4,6 +4,7 @@
 #' @param x an object of class "\code{summary.miss.lm}", usually, a result of a call to \code{\link{summary.miss.lm}}.
 #' @param digits minimal number of significant digits.
 #' @param ... further arguments passed to or from other methods.
+#' @return No return value, called for summary print.
 #' @examples
 #' ## For examples see example(miss.lm)
 #' @export
@@ -12,7 +13,7 @@ print.summary.miss.lm <-
   {
     cat("\nCall:\n",
         paste(deparse(x$call), sep = "\n", collapse = "\n"), "\n\n", sep = "")
-    
+
     if(length(coef(x))) {
       cat("Coefficients")
       cat(":\n")
