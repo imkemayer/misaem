@@ -7,6 +7,7 @@ This is a resubmission. In this version I have:
 * Moved `mice` package from `Imports` to `Suggests` because not required for package working and causing warning in Linux and Windows.
 * Fixed some minor bugs in the `miss.lm.fit` function.
 * Fixed typos in function descriptions.
+* Added `\value` field for `print.*` functions.
 
 ## Test environments
 
