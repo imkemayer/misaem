@@ -1,8 +1,8 @@
 Package: misaem
 Title: Linear Regression and Logistic Regression with Missing
         Covariates
-Version: 1.0.1
-Date: 2021-04-07
+Version: 1.0.1.9000
+Date: 2021-04-12
 Authors@R: c( person("Wei", "Jiang", role = "aut", email = "wei.jiang@polytechnique.edu"),
               person("Pavlo","Mozharovskyi", role = "ctb", email = "pavlo.mozharovskyi@telecom-paristech.fr"),
               person("Julie","Josse", role = c("aut","cre"), email = "julie.josserennes@gmail.com"),
